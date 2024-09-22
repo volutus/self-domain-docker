@@ -15,7 +15,7 @@ services:
       interval: 10s
       timeout: 10s
       retries: 3
-    command: ./nginx/start.sh
+    command: ./app/start.sh
   flask-app:
     build: https://github.com/volutus/self-domain-flask.git
     restart: always

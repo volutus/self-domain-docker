@@ -47,5 +47,10 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+  uptime-kuma:
+    build: https://github.com/louislam/uptime-kuma
+    restart: always
+    ports: 
+      - '3001:3001'
 volumes:
   db-data:

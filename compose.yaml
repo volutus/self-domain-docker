@@ -6,7 +6,6 @@ services:
       - ./nginx/default.conf:/tmp/default.conf
     environment: 
       - FLASK_SERVER_ADDR=flask-app:8000
-      - UPTIME_KUMA_ADDR=uptime-kuma:3001
     ports:
       - "80:80"
     depends_on:
@@ -52,6 +51,8 @@ services:
     container_name: uptime-kuma
     volumes:
       - ./uptime-kuma-data:/app/data
+    environment: 
+      - UPTIME_KUMA_ADDR=uptime-kuma:3001
     ports:
       - 3001:3001  # <Host Port>:<Container Port>
     restart: always

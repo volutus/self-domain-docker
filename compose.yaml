@@ -6,7 +6,6 @@ services:
       - ./nginx/default.conf:/tmp/default.conf
     environment: 
       - UPTIME_KUMA_ADDR=uptime-kuma:3001
-      - FLASK_SERVER_ADDR=flask-app:8000
     ports:
       - "80:80"
     depends_on:

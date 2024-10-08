@@ -5,6 +5,7 @@ services:
     volumes:
       - ./nginx/default.conf:/tmp/default.conf
     environment: 
+      - FLASK_SERVER_ADDR=flask-app:8000
       - UPTIME_KUMA_ADDR=uptime-kuma:3001
     ports:
       - "80:80"

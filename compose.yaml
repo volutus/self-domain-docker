@@ -48,9 +48,12 @@ services:
       timeout: 5s
       retries: 5
   uptime-kuma:
-    build: https://github.com/louislam/uptime-kuma
+    image: louislam/uptime-kuma:1
+    container_name: uptime-kuma
+    volumes:
+      - ./uptime-kuma-data:/app/data
+    ports:
+      - 3001:3001  # <Host Port>:<Container Port>
     restart: always
-    ports: 
-      - '3001:3001'
 volumes:
   db-data:

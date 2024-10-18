@@ -2,11 +2,11 @@
 
 ```mermaid
 graph LR;
-    USER((User)) --> NGINX
+    USER(("User")) --> NGINX
     NGINX("NGINX Reverse Proxy") --> WSGI;
     NGINX --> UPTIME("Uptime Kuma");
-    WSGI --> FLASK;
-    FLASK --> DB[(Postgres)];
+    WSGI --> FLASK("Flask");
+    FLASK --> DB[("Postgres")];
 ```
 
 This contains all of the resources needed to run a docker compose for the entire server infrastructure of my self-titled domain.

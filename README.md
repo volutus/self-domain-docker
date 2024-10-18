@@ -15,11 +15,3 @@ This contains all of the resources needed to run a docker compose for the entire
 All of the website logic is driven by a Flask app which is stored at [the following repo.](https://github.com/volutus/self-domain-flask)
 
 I've updated the sample to also include a postgres database which I'll be integrating into the flask app. 
-
-## TODO
-
-I need to implement a health check endpoint in the flask app and tie it into the compose file. The current one (/flask-health-check) returns a 404 or some other non-200 status code since it doesn't exist.
-
-I want to spend some time testing this to make sure the NGINX reverse proxy is actually doing its job. It would be easy for this to work without the NGINX reverse proxy behaving as intended but the application won't scale correctly.
-
-I'd like to implement uptime kuma and tie it into the reverse proxy. They have a guide for this so it should be possible

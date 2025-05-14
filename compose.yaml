@@ -18,7 +18,7 @@ services:
       retries: 3
     command: /app/start.sh
   flask-app:
-    build: https://github.com/volutus/self-domain-flask.git
+    image: ghcr.io/volutus/self-domain-flask:master
     restart: always
     ports: 
       - '8000:8000'

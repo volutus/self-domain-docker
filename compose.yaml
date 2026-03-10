@@ -39,7 +39,8 @@ services:
     restart: always
     user: root
     volumes:
-      - ./db-data:/var/lib/postgresql/data
+      # Disable persistent volume and use init script since our data is all inside this SQL file
+      # - ./db-data:/var/lib/postgresql/data
       - ./sql/init.sql:/docker-entrypoint-initdb.d/db.sql
     environment:
       - POSTGRES_USER=${POSTGRES_USER}

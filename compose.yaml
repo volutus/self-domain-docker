@@ -25,7 +25,7 @@ services:
     environment:
       - DB_USERNAME=${POSTGRES_USER}
       - DB_PASSWORD=${POSTGRES_PW}
-      - DB_HOST=216.225.201.22
+      - DB_HOST=${POSTGRES_DB}
     healthcheck:
       test: ["CMD-SHELL", "curl --silent --fail localhost:8000/ping || exit 1"]
       interval: 10s

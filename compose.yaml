@@ -22,6 +22,9 @@ services:
     restart: always
     ports: 
       - '8000:8000'
+    environment:
+      - DB_USERNAME=${POSTGRES_USER}
+      - DB_PASSWORD=${POSTGRES_PW}
     healthcheck:
       test: ["CMD-SHELL", "curl --silent --fail localhost:8000/ping || exit 1"]
       interval: 10s
@@ -55,5 +58,3 @@ services:
     ports:
       - 3001:3001  # <Host Port>:<Container Port>
     restart: always
-volumes:
-  db-data:

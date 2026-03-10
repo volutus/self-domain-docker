@@ -17,6 +17,7 @@ services:
       timeout: 10s
       retries: 3
     command: /app/start.sh
+
   flask-app:
     image: ghcr.io/volutus/self-domain-flask:master
     restart: always
@@ -32,12 +33,14 @@ services:
       timeout: 10s
       retries: 3
     command: gunicorn -w 3 -t 60 -b 0.0.0.0:8000 app:app
+
   db:
     image: postgres:17-alpine
     restart: always
     user: root
     volumes:
       - ./db-data:/var/lib/postgresql/data
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/db.sql
     environment:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PW}
@@ -51,6 +54,7 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+
   uptime-kuma:
     image: louislam/uptime-kuma:1
     container_name: uptime-kuma

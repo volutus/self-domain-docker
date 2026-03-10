@@ -39,7 +39,6 @@ insert into noodle_review(noodle_id, review_date, score, review) values (1, '202
 insert into noodle_review(noodle_id, review_date, score, review) values (2, '2026-03-05', 76, E'Flavor: 27/40\nValue ($0.58): 26/30\nConvenience: 19/20\nNoodle Quality: 4/10');
 insert into noodle_review(noodle_id, review_date, score, review) values (3, '2026-03-06', 74, E'Flavor: 29/40\nValue ($1.08): 24/30\nConvenience: 15/20\nNoodle Quality: 6/10');
 insert into noodle_review(noodle_id, review_date, score, review) values (4, '2026-03-09', 73, E'Flavor: 30/40\nValue ($2.00): 21/30\nConvenience: 17/20\nNoodle Quality: 5/10');
-insert into noodle_review(noodle_id, review_date, score, review) values (1, '2026-03-09', 76, E'Flavor: 25/40\nValue ($0.51): 28/30\nConvenience: 19/20\nNoodle Quality: 4/10');
 
 commit;
 

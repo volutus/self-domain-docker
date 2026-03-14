@@ -39,37 +39,37 @@ insert into noodle_maker (name) values ('Kang Shi Fu');
 insert into noodles (maker_id, name, barcode, container_type, image_uri) values 
 (1, 'Lime Chili Flavor with Shrimp', '041789001154', 'Cup', 'https://images.barcodelookup.com/3148/31480755-1.jpg');
 insert into noodle_review(noodle_id, review_date, score, price, review) values 
-(1, '2026-03-03', 76, 0.51, E'Flavor: 25/40\nValue ($0.51): 28/30\nConvenience: 19/20\nNoodle Quality: 4/10');
+(1, '2026-03-03', 70, 0.51, E'Flavor: 37/60\nConvenience: 29/30\nNoodle Quality: 4/10');
 
 insert into noodles (maker_id, name, barcode, container_type, image_uri) values 
 (1, 'Hot & Spicy Beef', '041789001420', 'Cup', 'https://images.barcodelookup.com/3148/31480731-1.jpg');
 insert into noodle_review(noodle_id, review_date, score, price, review) values 
-(2, '2026-03-05', 76, 0.58, E'Flavor: 27/40\nValue ($0.58): 26/30\nConvenience: 19/20\nNoodle Quality: 4/10');
+(2, '2026-03-05', 69, 0.58, E'Flavor: 36/60\nConvenience: 29/30\nNoodle Quality: 4/10');
 
 insert into noodles (maker_id, name, barcode, container_type, image_uri) values 
 (2, 'Stir Fry - Korean BBQ', '070662404034', 'Cup', 'https://images.barcodelookup.com/17397/173979890-1.jpg');
 insert into noodle_review(noodle_id, review_date, score, price, review) values 
-(3, '2026-03-06', 74, 1.08, E'Flavor: 29/40\nValue ($1.08): 24/30\nConvenience: 15/20\nNoodle Quality: 6/10');
+(3, '2026-03-06', 70, 1.08, E'Flavor: 42/60\nConvenience: 22/30\nNoodle Quality: 6/10');
 
 insert into noodles (maker_id, name, barcode, container_type, image_uri) values 
 (3, 'Artificial Pork', '052066000418', 'Cup', 'https://images.barcodelookup.com/3146/31466916-1.jpg');
 insert into noodle_review(noodle_id, review_date, score, price, review) values 
-(4, '2026-03-09', 73, 2.00, E'Flavor: 30/40\nValue ($2.00): 21/30\nConvenience: 17/20\nNoodle Quality: 5/10');
+(4, '2026-03-09', 75, 2.00, E'Flavor: 45/60\nConvenience: 25/30\nNoodle Quality: 5/10');
 
 insert into noodles (maker_id, name, barcode, container_type, image_uri) values 
 (4, 'Katsuo Udon Noodle', '087703023727', 'Bowl', 'https://images.barcodelookup.com/5345/53458880-1.jpg');
 insert into noodle_review(noodle_id, review_date, score, price, review) values 
-(5, '2026-03-11', 48, 4.00, E'Flavor: 32/40\nValue ($4.00): 5/30\nConvenience: 4/20\nNoodle Quality: 7/10');
+(5, '2026-03-11', 61, 4.00, E'Flavor: 48/60\nConvenience: 6/30\nNoodle Quality: 7/10');
 
 insert into noodles (maker_id, name, barcode, container_type, image_uri) values 
 (3, 'Shrimp Tom Yum', '052066000432', 'Cup', 'https://images.barcodelookup.com/3147/31473945-1.jpg');
 insert into noodle_review(noodle_id, review_date, score, price, review) values 
-(6, '2026-03-12', 72, 2.00, E'Flavor: 31/40\nValue ($2.00): 21/30\nConvenience: 17/20\nNoodle Quality: 5/10');
+(6, '2026-03-12', 77, 2.00, E'Flavor: 47/60\nConvenience: 25/30\nNoodle Quality: 5/10');
 
 insert into noodles (maker_id, name, barcode, container_type, image_uri) values 
 (5, 'Braised Artificial Beef', '6937962107000', 'Bowl', 'https://images.barcodelookup.com/30714/307142344-1.jpg');
 insert into noodle_review(noodle_id, review_date, score, price, review) values 
-(7, '2026-03-13', 74, 2.00, E'Flavor: 30/40\nValue ($2.50): 23/30\nConvenience: 15/20\nNoodle Quality: 6/10');
+(7, '2026-03-13', 71, 2.00, E'Flavor: 45/60\nConvenience: 20/30\nNoodle Quality: 6/10');
 
 
 commit;

@@ -39,9 +39,9 @@ services:
     restart: always
     user: root
     volumes:
-      # Disable persistent volume and use init script since our data is all inside this SQL file
-      # - ./db-data:/var/lib/postgresql/data
-      - ./sql/init.sql:/docker-entrypoint-initdb.d/db.sql
+      - ./db-data:/var/lib/postgresql/data
+      # Disable init.sql script in favor of persistent DB. This will allow us to create a backend for posting reviews without source access
+      # - ./sql/init.sql:/docker-entrypoint-initdb.d/db.sql
     environment:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PW}

@@ -23,6 +23,8 @@ services:
     restart: always
     ports: 
       - '8000:8000'
+    volumes:
+      - ./static-images:/home/app/static
     environment:
       - DB_HOST=self-domain-docker-db-1
       - DB_USERNAME=${POSTGRES_USER}
